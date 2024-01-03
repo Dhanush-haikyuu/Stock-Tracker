@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="stock.mp4" type="video/mp4">
+    </video>
+    
+    <div class="container">
+        <abbr title="About"><a href="about.html"><img a src="aboutori.jpg" align="right" style="width:10px;height:20px;padding-right: 10px;padding-top: 5px;"></a></abbr>
+        <h1 style="padding-left: 18px; padding-top: 20px;;">QuantQuasar</h1>
+        <form id="login-form">
+            <div class="in">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <br>
+            <div class="out">
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" placeholder="Enter your password"><br>
+                <button type="button" onclick="login()">Login</button>
+            </div>
+        </form>
+        <div id="search-container" style="display: none;">
+            <div style="margin: 10px;">
+                <label for="symbol">Enter Stock Symbol:</label>
+            </div>
+            <input type="text" id="symbol" required oninput="handleInputChange(this.value)">
+            <div id="suggestions"></div>
+            <button onclick="searchStock()">Search</button>
+            <div id="result-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
