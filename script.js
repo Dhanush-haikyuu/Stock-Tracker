@@ -12,7 +12,7 @@ async function handleInputChange(inputValue) {
 
 async function fetchCompanyNames(query) {
 
-    const staticCompanyList = ['TCS', 'HD', 'IBM','AAPL', 'GOOGL','AMZN','MSFT','TSLA','JPM','V','PYPL','BA','NVDA','GS','DIS','NFLX','INTC','VZ','CVX','SBUX','WMT','PG','KO','CMCSA','BAIDU','GS','ADBE','CRM','AMD','ORCL','CSCO','MU','UBER','LYFT','SNAP','GS','GS','GE','CAT','RTX','JD','BABA','ABBV','AAPL','MSFT','AMZN','FB','JPM','PYPL','NVDA','INTC','VZ','RTX','CMG','BIIB','GILD','COST','VOD','TM','ORCL','INTU','SAP','NOW','VMW','CTXS','RHT','NTAP','RPD','INFY','ITC','HERO','BTC','M','BABA','ETSY','TGT','JNJ','PFE','BAC','F','GM','TWTR','XOM','SPY','CTSH];
+    const staticCompanyList = ['TCS', 'HD', 'IBM','AAPL', 'GOOGL','AMZN','MSFT','TSLA','JPM','V','PYPL','BA','NVDA','GS','DIS','NFLX','INTC','VZ','CVX','SBUX','WMT','PG','KO','CMCSA','BAIDU','GS','ADBE','CRM','AMD','ORCL','CSCO','MU','UBER','LYFT','SNAP','GS','GS','GE','CAT','RTX','JD','BABA','ABBV','AAPL','MSFT','AMZN','FB','JPM','PYPL','NVDA','INTC','VZ','RTX','CMG','BIIB','GILD','COST','VOD','TM','ORCL','INTU','SAP','NOW','VMW','CTXS','RHT','NTAP','RPD','INFY','ITC','HERO','BTC','M','BABA','ETSY','TGT','JNJ','PFE','BAC','F','GM','TWTR','XOM','SPY','CTSH'];
     return staticCompanyList.filter(company => company.toLowerCase().startsWith(query.toLowerCase()));
 }
 
