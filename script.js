@@ -39,7 +39,7 @@ async function login() {
     const password = document.getElementById('password').value;
 
   
-    if (username === 'demo' && password === 'demo') {
+    if (username === '' && password === '') {
         isLoggedIn = true;
         document.getElementById('login-form').style.display = 'none';
         document.getElementById('search-container').style.display = 'block';
