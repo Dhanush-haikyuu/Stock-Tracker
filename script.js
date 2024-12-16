@@ -1,4 +1,4 @@
-let isLoggedIn = false;
+let isLoggedIn = true;
 
 async function handleInputChange(inputValue) {
     const suggestionsContainer = document.getElementById('suggestions');
