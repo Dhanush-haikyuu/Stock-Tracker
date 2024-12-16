@@ -49,11 +49,6 @@ function selectSuggestion(selectedCompany) {
 // }
 
 async function searchStock() {
-    if (isLoggedIn) {
-        alert('Please login first.');
-        return;
-    }
-
     const symbolInput = document.getElementById('symbol');
     const resultContainer = document.getElementById('result-container');
     const symbol = symbolInput.value.toUpperCase();
