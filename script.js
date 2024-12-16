@@ -34,19 +34,19 @@ function selectSuggestion(selectedCompany) {
     document.getElementById('suggestions').innerHTML = '';
 }
 
-async function login() {
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+// async function login() {
+//     const username = document.getElementById('username').value;
+//     const password = document.getElementById('password').value;
 
   
-    if (username === '' && password === '') {
-        isLoggedIn = true;
-        document.getElementById('login-form').style.display = 'none';
-        document.getElementById('search-container').style.display = 'block';
-    } else {
-        alert('Invalid credentials. Please try again.');
-    }
-}
+//     if (username === '' && password === '') {
+//         isLoggedIn = true;
+//         document.getElementById('login-form').style.display = 'none';
+//         document.getElementById('search-container').style.display = 'block';
+//     } else {
+//         alert('Invalid credentials. Please try again.');
+//     }
+// }
 
 async function searchStock() {
     if (isLoggedIn) {
