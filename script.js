@@ -49,7 +49,7 @@ async function login() {
 }
 
 async function searchStock() {
-    if (!isLoggedIn) {
+    if (isLoggedIn) {
         alert('Please login first.');
         return;
     }
