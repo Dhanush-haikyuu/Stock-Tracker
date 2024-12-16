@@ -1,4 +1,3 @@
-let isLoggedIn = false;
 
 async function handleInputChange(inputValue) {
     const suggestionsContainer = document.getElementById('suggestions');
